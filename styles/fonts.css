@@ -1,0 +1,18 @@
+@font-face { font-family: Tungsten-Bold; src: url("/fonts/Tungsten-Bold_Web.woff2") format("woff2"), url("Tungsten-Bold_Web.woff") format("woff"); }
+@font-face { font-family: "FF Mark W05"; src: url("/fonts/FF_Mark_Bold.woff") format("woff"); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: DINNextW05-Medium; src: url("/fonts/DINNextW05-Medium.woff2") format("woff2"), url("/fonts/DINNextW05-Medium.woff") format("woff"); }
+@font-face { font-family: DINNextW05-Light; src: url("/fonts/DINNextW23-Light.ttf") format("opentype"); }
+
+p {
+    font-family: DINNextW05-Medium, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Tungsten-Bold, sans-serif;
+    text-transform: uppercase;
+}
+
+h4, h5, h6 {
+    font-family: "FF Mark W05", sans-serif;
+    text-transform: uppercase;
+}

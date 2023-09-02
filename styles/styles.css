@@ -1,0 +1,253 @@
+body {
+    background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 44%, rgba(0,0,0,0.83) 100%), url("/assets/Ep7_Act_Overview_Art_3440x1020_v3.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: .45rem 1.2rem;
+    z-index: 3;
+}
+
+#grandLogo {
+    margin: 0;
+    display: inline;
+}
+
+#grandLogo svg {
+    transform: translateY(0.25rem);
+    margin-right: .5rem;
+}
+
+#grandLogo figcaption {
+    display: inline-grid;
+}
+#grandLogo h3 {
+    font-size: 2.46rem;
+    color: rgba(0, 0, 0, 0%);
+    -webkit-text-stroke: .045rem #E4E4E4;
+    letter-spacing: .11rem;
+    margin: 0;
+}
+
+#grandLogo h4 {
+    font-size: 0.7rem;
+    color: #E4E4E4;
+    margin: -0.3rem 0 0 0;
+}
+
+
+#missionsAndPoints {
+    color: #E4E4E4;
+    font-family: DINNextW05-Light, sans-serif;
+}
+
+#missionsAndPoints > span {
+    margin-right: 1.45rem;
+    cursor: pointer;
+    position: relative;
+}
+#missionsAndPoints span span {
+    margin-right: .65rem;
+    letter-spacing: -.1rem;
+}
+#missionsAndPoints span svg {
+    margin-right: .2rem;
+}
+
+/* - */
+#displayMissions-description {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    left: calc(50% - 12.5rem);
+    background-color: rgba(18, 29, 47, 0.7);
+    width: 25rem;
+    z-index: 4;
+    border:  2px solid rgba(239, 239, 239, 0.4);
+    outline: .1px solid rgba(239, 239, 239, 0.85);
+}
+#displayMissions-description-lvl {
+    position: absolute;
+    left: calc(50% - 1.5em);
+    top: -.8em;
+    width: 3em;
+    text-align: center;
+    background-color: rgba(7, 12, 19, 0.84);
+    padding-bottom: .2em;
+    clip-path: polygon(1em 0, 2em 0, 100% 50%, 2em 100%, 1em 100%, 0 50%);
+}
+.displayMissions-description-title {
+    padding: .5rem;
+    background-color: rgba(24, 109, 140, 0.83);
+}
+.displayMissions-description-corps {
+    padding: .5rem;
+}
+
+.displayMissions-description-title {
+    display: flex;
+    justify-content: space-between;
+}
+.displayMissions-description-title h2, .displayMissions-description-title p {
+    display: inline;
+    margin: 0;
+    line-height: .9em;
+}
+.displayMissions-description-title h2 {
+    letter-spacing: .04rem;
+    font-size: 1.3em;
+}
+.displayMissions-description-title p {
+    font-size: 0.8rem;
+    padding-top: .6em;
+}
+
+#displayMissions:hover #displayMissions-description {
+    display: block;
+}
+
+#displayMissions-description-firstWin .displayMissions-description-corps {
+    display: grid;
+    font-size: .9em;
+    grid-auto-flow: column;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 2.5em 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: .2em .7em;
+}
+#displayMissions-description-firstWin .displayMissions-description-corps p {
+     margin: 0;
+ }
+#displayMissions-description-firstWin .p1, #displayMissions-description-firstWin .p3 {
+    color: #ABB087;
+}
+#displayMissions-description-firstWin .displayMissions-description-corps .p0 {
+    grid-area: 1 / 1 / 3 / 2;
+}
+#displayMissions-description-firstWin .displayMissions-description-corps .p3 {
+    text-align: right;
+    transform: translateY(0.6em);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#navAccueil {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+#navAccueil li {
+    font-family: Tungsten-Bold, sans-serif;
+    letter-spacing: .08rem;
+    color: #E4E4E4;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    padding-left: .42em;
+}
+#navAccueil li::marker {
+    content: '◆ ';
+    font-size: .34em;
+    vertical-align: middle;
+}
+#navAccueil li:first-child a {
+    font-size: 2.4em;
+    letter-spacing: 0;
+    color: #E75358;
+}
+#navAccueil li a {
+    transition: padding-left 0.3s;
+}
+#navAccueil li a:hover {
+    padding-left: 1rem;
+    color: #79e0e5;
+}
+
+
+/* ------------------------------------------------------------------------ */
+/* -MESSAGERIE--MESSAGERIE--MESSAGERIE--MESSAGERIE--MESSAGERIE--MESSAGERIE- */
+/* ------------------------------------------------------------------------ */
+
+
+#chat, #chat input {
+    font-size: .7rem;
+    font-family: DINNextW05-Medium, sans-serif;
+    color: #8899a2;
+}
+#chat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: .2rem .3rem;
+}
+#chat input {
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0%);
+}
+
+#chat #chatText {
+    color: #E4E4E4;
+}
+
+#chat .chat-date {
+    color: #8899a2;
+    text-transform: uppercase;
+}
+
+#chat #chatMessages {
+    color: #E4E4E4;
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: calc(100% - .4rem);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-left: .4rem;
+}
+
+#chat #chatText:focus ~ #chatMessages {
+    display: block;
+}
+
+#chat #chatDisplayButton:checked ~ #chatMessages {
+    display: block;
+}
+
+#chat .chat-message-author {
+    color: #ABB087;
+}
+#chat .chat-message-group {
+    color: #648493;
+}
+#chat .chat-message-private {
+    color: #DF91E1;
+}

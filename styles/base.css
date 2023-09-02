@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+a {
+    color: #E4E4E4;
+    text-decoration: none;
+}
+
+*::selection {
+    color: #E75358;
+}
+
+* {
+    user-select: none;
+}
